@@ -101,49 +101,50 @@ void Terminate(IntStack* s)
 
 int main()
 {
-	IntStack s;
-	if (Initialize(&s, 64) == -1)
-	{
-		puts("½ºÅÃ »ý¼º¿¡ ½ÇÆÐÇÏ¿´½À´Ï´Ù.");
-		return 1;
-	}
+	// IntStack s;
+	// if (Initialize(&s, 64) == -1)
+	// {
+	// 	puts("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+	// 	return 1;
+	// }
 	
-	while (1)
-	{
-		int menu, x;
-		printf("ÇöÀç µ¥ÀÌÅÍ ¼ö : %d / %d\n", Size(&s), Capacity(&s));
-		printf("(1)Çª½Ã (2)ÆË (3)ÇÇÅ© (4)Ãâ·Â (0)Á¾·á : ");
-		scanf("%d", &menu);
+	// while (1)
+	// {
+	// 	int menu, x;
+	// 	printf("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ : %d / %d\n", Size(&s), Capacity(&s));
+	// 	printf("(1)Çªï¿½ï¿½ (2)ï¿½ï¿½ (3)ï¿½ï¿½Å© (4)ï¿½ï¿½ï¿½ (0)ï¿½ï¿½ï¿½ï¿½ : ");
+	// 	scanf("%d", &menu);
 
-		if (menu == 0) break;
-		switch (menu)
-		{
-		case 1:
-			printf("µ¥ÀÌÅÍ : ");
-			scanf("%d", &x);
-			if (Push(&s, x) == -1)
-				puts("\a¿À·ù : vÇª½Ã¿¡ ½ÇÆÐÇÏ¿´½À´Ï´Ù.");
-			break;
+	// 	if (menu == 0) break;
+	// 	switch (menu)
+	// 	{
+	// 	case 1:
+	// 		printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ");
+	// 		scanf("%d", &x);
+	// 		if (Push(&s, x) == -1)
+	// 			puts("\aï¿½ï¿½ï¿½ï¿½ : vÇªï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+	// 		break;
 
-		case 2:
-			if (Pop(&s, &x) == -1)
-				puts("\a¿À·ù : ÆË¿¡ ½ÇÆÐÇÏ¿´½À´Ï´Ù.");
-			else
-				printf("ÆË µ¥ÀÌÅÍ´Â %dÀÔ´Ï´Ù.\n", x);
-			break;
+	// 	case 2:
+	// 		if (Pop(&s, &x) == -1)
+	// 			puts("\aï¿½ï¿½ï¿½ï¿½ : ï¿½Ë¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+	// 		else
+	// 			printf("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ %dï¿½Ô´Ï´ï¿½.\n", x);
+	// 		break;
 
-		case 3:
-			if (Peek(&s, &x) == -1)
-				puts("\a¿À·ù : ÇÇÅ©¿¡ ½ÇÆÐÇÏ¿´½À´Ï´Ù.");
-			else
-				printf("ÇÇÅ© µ¥ÀÌÅÍ´Â %dÀÔ´Ï´Ù.\n", x);
-			break;
+	// 	case 3:
+	// 		if (Peek(&s, &x) == -1)
+	// 			puts("\aï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+	// 		else
+	// 			printf("ï¿½ï¿½Å© ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ %dï¿½Ô´Ï´ï¿½.\n", x);
+	// 		break;
 
-		case 4:
-			Print(&s);
-			break;
-		}
-	}
-	Terminate(&s);
+	// 	case 4:
+	// 		Print(&s);
+	// 		break;
+	// 	}
+	// }
+	// Terminate(&s);
+	printf("Hello World~  hahahaha\n");
 	return 0;
 }

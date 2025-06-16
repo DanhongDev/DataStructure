@@ -1,0 +1,12 @@
+BasedOnStyle: Google
+IndentWidth: 4
+ColumnLimit: 0
+SpaceBeforeParens: ControlStatements
+
+BraceWrapping:
+  AfterControlStatement: true
+  AfterFunction: true
+  AfterEnum: true
+  AfterStruct: true
+  AfterClass: true
+  SplitEmptyFunction: false

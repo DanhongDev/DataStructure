@@ -71,3 +71,10 @@ int Peek(const IntQueue* q, int* x)
 
     return 0;
 }
+
+void Clear(IntQueue* q) 
+{
+    q->num = 0;
+    q->front = 0;
+    q->rear = 0;
+}

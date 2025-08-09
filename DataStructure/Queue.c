@@ -2,7 +2,7 @@
 
 int Initialize(IntQueue* q, int max) 
 {
-    if(q->que = calloc(max, sizeof(int))) //힙 메모리에 max값만큼 저장
+    if(q->que = calloc(max, sizeof(int)) == NULL) //힙 메모리에 max값만큼 저장
     {
         return -1;
     }
@@ -73,8 +73,78 @@ int Peek(const IntQueue* q, int* x)
 }
 
 void Clear(IntQueue* q) 
+//모든 데이터 삭제 ==> front와 rear값만 0으로 만들어주면 인큐시 덮어쓰기가 되므로
+//굳이 que를 삭제 안해도 된다.
 {
     q->num = 0;
     q->front = 0;
     q->rear = 0;
+}
+
+int Capacity(const IntQueue* q) 
+{
+    return q->max;
+}
+
+int Size(const IntQueue* q) 
+{
+    return q->num;
+}
+
+int IsEmpty(const IntQueue* q) 
+{
+    return q->num <= 0;
+}
+
+int IsFull(const IntQueue* q) 
+{
+    return q->num >= q->max;
+}
+
+int Search(const IntQueue* q, int x) 
+{
+    int i;
+    for(i = 0; i < q->max; i++)
+    {
+        if(q->que[i] == x)
+        {
+            return 0;
+        }
+        else
+        {
+            return -1;
+        }
+    }
+
+    //정답 예시
+    int i, idx;
+    for(i = 0; i < q->max; i++)
+    {
+        if(q->que[idx = (i + q->front) % q->max] == x)
+        {
+            return idx; //검색 성공
+        }
+    }
+    return -1; //검색 실패
+}
+
+void Print(const IntQueue* q) 
+{
+    int i;
+    for(i = 0; i < q->num; i++)
+    {
+        printf("%d\n", q->que[(i + q->front) % q->max]);
+    }
+}
+
+void Terminate(IntQueue* q) 
+{
+    q->num = 0;
+    q->front = 0;
+    q->rear = 0;
+    q->max = 0;
+    if(q->que != NULL)
+    {
+        free(q->que);
+    }
 }

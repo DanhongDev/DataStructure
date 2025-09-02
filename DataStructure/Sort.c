@@ -248,6 +248,7 @@ void Quick(int a[], int left, int right)
     }
 }
 //퀵 정렬 (재귀X -> 반복문 이용)
+/*
 void quick (int a[], int left, int right)
 {
     IntStack lstack;
@@ -266,54 +267,63 @@ void quick (int a[], int left, int right)
         int x = a[(left + right) / 2];
     }
 }
-
-static int* buff;
-//병합 정렬
-void _merge(int a[], int left, int right)
-{
-    if(left < right)
-    {
-        int center = (left + right) / 2;
-        
-    }
-
-}
-int merge(int a[], int n)
-{
-    if(buff = calloc(n, sizeof(int)) == NULL)
-    {
-        return -1;
-    }
-    _merge(a, 0, n-1); //배열 전체를 병합정렬 시작
-    free(buff);
-    return 0;
-}
+*/
 
 //힙 정렬
+//a[left] ~ a[right]를 힙으로 만드는 함수
+static void downheap(int a[], int left, int right)
+{
+    int temp = a[left];
+    int child, parent;
+    for(parent = left; parent < (right+1)/2; parent = child)
+    {
+        int cl = parent * 2 + 1;
+        int cr = parent * 2 + 2;
+        child = (cr <= right && a[cl] > a[cr])? cl : cr;
+        if(temp >= a[child])
+            break;
+        a[parent] = a[child];
+    }
+    a[parent] = temp;
+}
 void heap(int a[], int n)
 {
-    
+    int i;
+    //배열 a를 heap상태로 만들어주기
+    for(i=(n/2)-1; i>=0; i--)
+    {
+        downheap(a, i, n-1); //right에 n-1(마지막 자리)를 항상 주네.
+    }
+    //heapsort 시작하기
+    for(i = n-1; i > 0; i--)
+    {
+        swap(int, a[0], a[i]); //위 downheap을 마친 배열 a의 초기 힙 상태는 120 32 70 22 5 68 11이다.
+        downheap(a, 0, i-1); //이번엔 right에 i-1을 주고 i--를 해주면서 끝에서부터 정렬된 숫자는 더이상 범위에 영향이 안가게 반복하네.
+    }
 }
 
 
 //main문
 int main()
 {
-    int i;
+    int i, nx;
     int *x;
-
-    int nx = 9;
-    x = calloc(9, sizeof(int));
-    for(i=0; i<9; i++)
+    printf("힙 정렬\n");
+    printf("요소 개수: ");
+    scanf("%d", &nx);
+    x = calloc(nx, sizeof(int));
+    for(i=0; i<nx; i++)
     {
-        printf("x[%d]: ",i);
+        printf("x[%d]: ", i);
         scanf("%d", &x[i]);
     }
+    heap(x, nx);
+    printf("오름차순으로 정렬했습니다. \n");
+    for(i=0; i<nx; i++)
+    {
+        printf("x[%d] = %d\n", i, x[i]);
+    }
+    free(x);
 
-    //Insertion(x, 7);
-    //Shell(x, 8);
-    Quick(x, 0, nx - 1);
-
-   
     return 0;
 }

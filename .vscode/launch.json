@@ -2,7 +2,8 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug 활성 C 파일",
+      // --- 기존 C++ 디버그 설정 ---
+      "name": "Debug C++ 파일 (g++)", // 어떤 설정인지 알기 쉽게 이름 변경
       "type": "cppdbg",
       "request": "launch",
       "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -11,8 +12,22 @@
       "cwd": "${fileDirname}",
       "environment": [],
       "externalConsole": true,
-      "MIMode": "lldb", // Mac이니까 lldb 사용!
-      "preLaunchTask": "build-active-c-file"
+      "MIMode": "lldb",
+      "preLaunchTask": "C/C++: g++ 활성 파일 빌드" // g++ 빌드 작업을 사용
+    },
+    {
+      // +++ 새로 추가할 C 디버그 설정 +++
+      "name": "Debug C 파일 (gcc)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "lldb",
+      "preLaunchTask": "C/C++: gcc 활성 파일 빌드" // gcc 빌드 작업을 사용
     }
   ]
 }

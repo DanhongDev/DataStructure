@@ -23,15 +23,23 @@ Node* Search(List *list, const Member *x, int compare(const Member *x, const Mem
 
 //머리에 노드를 삽입
 void InsertFront(List *list, const Member *x);
+//이중 포인터 방식
+void InsertNodeFront(Node **head, Node **crnt, const Member *x);
 
 //꼬리에 노드를 삽입
 void InsertRear(List *list, const Member *x);
+//이중 포인터 방식
+void InsertNodeRear(Node **head, Node **crnt, const Member *x);
 
 //머리 노드를 삭제
 void RemoveFront(List *list);
+//이중 포인터 방식
+void RemoveNodeFront(Node **head, Node **crnt);
 
 //꼬리 노드를 삭제
 void RemoveRear(List *list);
+//이중 포인터 방식
+void RemoveNodeRear(Node **head, Node **crnt);
 
 //선택한 노드를 삭제
 void RemoveCurrent(List *list);
@@ -50,4 +58,5 @@ void Print(const List *list);
 
 //링크드리스트 종료
 void Terminate(List *list);
+
 #endif

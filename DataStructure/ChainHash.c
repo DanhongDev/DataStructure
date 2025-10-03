@@ -12,7 +12,7 @@ static int hash(int key, int size)
 }
 
 //노드의 값을 Member값으로 설정해주는 세팅함수
-static void SetNode(Node *n, const Member *x, const Node *next)
+static void SetNode(Node *n, const Member *x, Node *next)
 {
     n->data = *x;
     n->next = next;
@@ -109,16 +109,16 @@ int Remove(ChainHash *h, const Member *x)
     Node *p = h->table[key];
     //3. 버킷에 저장된 포인터가 가리키는 연결 리스트를 처음부터 순서대로 검색. 키 값과 같은 값을 찾으면 삭제.
     //  찾지 못하면 종료.
-    while(p != NULL)
-    {
-        if(p->data.no == x->no)//삭제할 노드를 발견함.ㄴ
-        {
-            h->table[key] = p->next;
-            break;
-        }
-        p = p->next;
-    }
-    return 0;
+    //while(p != NULL)
+    //{
+    //    if(p->data.no == x->no)//삭제할 노드를 발견함.ㄴ
+    //    {
+    //        h->table[key] = p->next;
+    //        break;
+    //    }
+    //    p = p->next;
+    //}
+    //return 0;
 
     //Ex3.
     Node **pp = &h->table[key];
@@ -151,8 +151,6 @@ void Dump(const ChainHash *h)//해시테이블의 모든 요소(우선은 숫자
         }
         printf("\n");
     }
-
-    return 0;
 }
 
 void Clear(ChainHash *h)//해시테이블의 모든 요소를 삭제하는 함수

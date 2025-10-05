@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 
@@ -10,6 +11,7 @@ int main()
     int N;
     cin >> N;
 
+    /*
     int spaceCnt = N-1, starCnt = 1;
     for(int i=0; i<(2*N-1); i++) //전체 반복문 (2n-1)
     {
@@ -58,6 +60,7 @@ int main()
             cout << '\n';
         }
     }
+    */
 
     //Gemini 개선판
     for(int i=1; i<=N; ++i)

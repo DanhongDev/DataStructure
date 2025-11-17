@@ -5,7 +5,7 @@
 #include <stdbool.h>
 #include "Stack.h"
 
-//버블 정렬1
+//버블 정렬1(chg 플래그 사용)
 void bubble(int a[], int n)
 {
     int i, j;
@@ -24,7 +24,7 @@ void bubble(int a[], int n)
         if(chg == 0) break;
     }
 }
-//버블 정렬2
+//버블 정렬2(k = last 사용)
 void bubble2(int a[], int n)
 {
     int k = 0;
@@ -58,7 +58,7 @@ void Select(int a[], int n)
                 min = j; //조건이 맞다면 min의 인덱스를 j로 변경
             }
         }
-        swap(int, a[j], a[min]);
+        swap(int, a[i], a[min]);
     }
 }
 
@@ -207,7 +207,6 @@ void QuickSortOneStep(int a[], int n)
 //퀵 정렬 (재귀)
 void Quick(int a[], int left, int right)
 {
-//QuickSort
     int pl = left;
     int pr = right;
     int x = a[(pl + pr) / 2];
@@ -248,7 +247,6 @@ void Quick(int a[], int left, int right)
     }
 }
 //퀵 정렬 (재귀X -> 반복문 이용)
-/*
 void quick (int a[], int left, int right)
 {
     IntStack lstack;
@@ -267,7 +265,6 @@ void quick (int a[], int left, int right)
         int x = a[(left + right) / 2];
     }
 }
-*/
 
 //힙 정렬
 //a[left] ~ a[right]를 힙으로 만드는 함수

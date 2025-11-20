@@ -14,34 +14,34 @@ int main()
         std::cin >> arr[i];
     }
 
-    //선택 정렬[최선: O(N^2), 평균: O(N^2), 최악: O(N^2)]
-    // for(int i=0; i<arr.size()-1; i++)
-    // {
-    //     int min = i;
-    //     for(int j=i+1; j<arr.size(); j++)
-    //     {
-    //         min = arr[j] < arr[min] ? j : min;
-    //     }
-    //     std::swap(arr[i], arr[min]);
-    // }
+    //1. 선택 정렬[최선: O(N^2), 평균: O(N^2), 최악: O(N^2)]
+    for(int i=0; i<arr.size()-1; i++)
+    {
+        int min = i;
+        for(int j=i+1; j<arr.size(); j++)
+        {
+            min = arr[j] < arr[min] ? j : min;
+        }
+        std::swap(arr[i], arr[min]);
+    }
     
-    //버블 정렬[최선: O(N), 평균: O(N^2), 최악: O(N^2)]
-    // for(int i=arr.size()-1; i>0; i--)
-    // {
-    //     bool chg = false;
-    //     for(int j=0; j<i; j++)
-    //     {
-    //         if(arr[j] > arr[j+1])
-    //         {
-    //             std::swap(arr[j], arr[j+1]);
-    //             chg = true;
-    //         }
-    //     }
+    //2. 버블 정렬[최선: O(N), 평균: O(N^2), 최악: O(N^2)]
+    for(int i=arr.size()-1; i>0; i--)
+    {
+        bool chg = false;
+        for(int j=0; j<i; j++)
+        {
+            if(arr[j] > arr[j+1])
+            {
+                std::swap(arr[j], arr[j+1]);
+                chg = true;
+            }
+        }
 
-    //     if(!chg) break;
-    // }
+        if(!chg) break;
+    }
 
-    //삽입 정렬[최선: O(N), 평균: O(N^2), 최악: O(N^2)]
+    //3. 삽입 정렬[최선: O(N), 평균: O(N^2), 최악: O(N^2)]
     for(int i=1; i<arr.size(); i++)
     {
         int key = arr[i];

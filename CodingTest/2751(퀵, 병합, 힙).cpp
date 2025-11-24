@@ -10,20 +10,20 @@ void QuickSort(std::vector<int>& arr, int left, int right) //오류3. &가 안�
 
     int low = left; //pl
     int high = right; //pr
-    int x = arr[(left+right)/2]; //pivot
+    int x = (left+right)/2; //pivot
 
     //===MY CODE===
     // while(1)
     // {
-    //     if(arr[low] < x)
+    //     if(arr[low] < arr[x])
     //     {
     //         low++;
     //     }
-    //     if(arr[high] > x)
+    //     if(arr[high] > arr[x])
     //     {
     //         high--;
     //     }
-    //     if(arr[low] >= x && arr[high] <= x)
+    //     if(arr[low] >= x && arr[high] <= arr[x])
     //     {
     //         std::swap(arr[low], arr[high]);
     //         low++;
@@ -39,8 +39,8 @@ void QuickSort(std::vector<int>& arr, int left, int right) //오류3. &가 안�
     //while로 쭉 이동하지 않고 if로 한칸씩 끊어가면 꼬일위험이 있다. ==> do-while문을 써보기.
     do
     {
-        while(arr[low] < x) low++;
-        while(arr[high] > x) high--;
+        while(arr[low] < arr[x]) low++;
+        while(arr[high] > arr[x]) high--;
 
         //교환이 일어나는건 언제나 low <= high일때의 상황이다.
         //low > high인 경우는 교차가 일어난 경우이므로 교환이 일어나면 안된다.
@@ -66,7 +66,7 @@ void QuickSort(std::vector<int>& arr, int left, int right) //오류3. &가 안�
 }
 
 //2. 병합정렬
-//쪼개진 덩어리를 합치는 일꾼 함수
+//merge: 쪼개진 덩어리를 합치는 일꾼 함수
 void merge(std::vector<int>& arr, int left, int mid, int right)
 {
     //1. merge할 임시 배열 준비
@@ -107,7 +107,7 @@ void merge(std::vector<int>& arr, int left, int mid, int right)
         arr[left + l] = tempArr[l]; //left+0, left+1, ... 로 활용
     }
 }
-//병합정렬 (재귀)
+//MergeSort: 병합정렬을 실행하는 함수(재귀)
 void MergeSort(std::vector<int>& arr, int left, int right)
 {
     //기저: 원소가 1개 이하면 쪼갤 수 없기에 멈춤
@@ -135,9 +135,50 @@ void MergeSort(std::vector<int>& arr, int left, int right)
 }
 
 //3. 힙정렬
-void Heap()
+//downheap: heap상태를 만드는 함수
+void downheap(std::vector<int>& arr, int parent, int size)
 {
-    
+    int left = parent * 2 + 1;
+    int right = parent * 2 + 2;
+    int largest = parent;
+
+    while(left <= size) //left <= size 조건 뜻: 현재 부모노드가 자식유무를 판별
+    {
+        if(arr[left] > arr[largest])
+        {
+            largest = left;
+        }
+        if(right <= size && arr[right] > arr[largest])
+        {
+            largest = right;
+        }
+        if(largest == parent)
+        {
+            break;
+        }
+        std::swap(arr[parent], arr[largest]);
+
+        parent = largest;
+        left = parent * 2 + 1;
+        right = parent * 2 + 2;
+    }
+}
+//HeapSort: 힙정렬을 실행하는 함수
+void HeapSort(std::vector<int>& arr, int n)
+{
+    int last_parent = (n-1 -1)/2;
+    //1. 힙 만들기
+    for(int i=last_parent; i>=0; i--)
+    {
+        downheap(arr, i, n-1);
+    }
+
+    //2. 정렬하기
+    for(int i=n-1; i>0; i--)
+    {
+        std::swap(arr[0], arr[i]);
+        downheap(arr, 0, i-1);
+    }
 }
 
 int main()
@@ -160,10 +201,11 @@ int main()
     //QuickSort(arr, 0, arr.size()-1);
 
     //3. 병합 정렬 아용 (직접 구현)
-    MergeSort(arr, 0, arr.size()-1);
+    //MergeSort(arr, 0, arr.size()-1);
     
     //4. 힙 정렬 이용 (직접 구현)
-
+    //HeapSort(arr, arr.size());
+    
     //출력 부분
     for(int i : arr)
     {

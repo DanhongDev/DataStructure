@@ -139,50 +139,50 @@ void Terminate(IntStack *s)
 // 2. 포인터를 통해 구현하는것이므로 쫄지말고 들이박아볼것.
 
 int main() {
-    // IntStack s;
-    // if (Initialize(&s, 64) == -1)
-    // {
-    // 	puts("���� ������ �����Ͽ����ϴ�.");
-    // 	return 1;
-    // }
+    IntStack s;
+    if (Initialize(&s, 64) == -1)
+    {
+    	puts("���� ������ �����Ͽ����ϴ�.");
+    	return 1;
+    }
 
-    // while (1)
-    // {
-    // 	int menu, x;
-    // 	printf("���� ������ �� : %d / %d\n", Size(&s), Capacity(&s));
-    // 	printf("(1)Ǫ�� (2)�� (3)��ũ (4)��� (0)���� : ");
-    // 	scanf("%d", &menu);
+    while (1)
+    {
+    	int menu, x;
+    	printf("���� ������ �� : %d / %d\n", Size(&s), Capacity(&s));
+    	printf("(1)Ǫ�� (2)�� (3)��ũ (4)��� (0)���� : ");
+    	scanf("%d", &menu);
 
-    // 	if (menu == 0) break;
-    // 	switch (menu)
-    // 	{
-    // 	case 1:
-    // 		printf("������ : ");
-    // 		scanf("%d", &x);
-    // 		if (Push(&s, x) == -1)
-    // 			puts("\a���� : vǪ�ÿ� �����Ͽ����ϴ�.");
-    // 		break;
+    	if (menu == 0) break;
+    	switch (menu)
+    	{
+    	case 1:
+    		printf("������ : ");
+    		scanf("%d", &x);
+    		if (Push(&s, x) == -1)
+    			puts("\a���� : vǪ�ÿ� �����Ͽ����ϴ�.");
+    		break;
 
-    // 	case 2:
-    // 		if (Pop(&s, &x) == -1)
-    // 			puts("\a���� : �˿� �����Ͽ����ϴ�.");
-    // 		else
-    // 			printf("�� �����ʹ� %d�Դϴ�.\n", x);
-    // 		break;
+    	case 2:
+    		if (Pop(&s, &x) == -1)
+    			puts("\a���� : �˿� �����Ͽ����ϴ�.");
+    		else
+    			printf("�� �����ʹ� %d�Դϴ�.\n", x);
+    		break;
 
-    // 	case 3:
-    // 		if (Peek(&s, &x) == -1)
-    // 			puts("\a���� : ��ũ�� �����Ͽ����ϴ�.");
-    // 		else
-    // 			printf("��ũ �����ʹ� %d�Դϴ�.\n", x);
-    // 		break;
+    	case 3:
+    		if (Peek(&s, &x) == -1)
+    			puts("\a���� : ��ũ�� �����Ͽ����ϴ�.");
+    		else
+    			printf("��ũ �����ʹ� %d�Դϴ�.\n", x);
+    		break;
 
-    // 	case 4:
-    // 		Print(&s);
-    // 		break;
-    // 	}
-    // }
-    // Terminate(&s);
-    printf("Hello World~  hahahaha\n");
+    	case 4:
+    		Print(&s);
+    		break;
+    	}
+    }
+    Terminate(&s);
+
     return 0;
 }

@@ -10,6 +10,7 @@ int main()
     int n, k;
     std::cin >> n >> k;
     std::vector<int> arr;
+    arr.reserve(n);
     std::queue<int> q;
 
     for(int i=1; i<=n; i++)

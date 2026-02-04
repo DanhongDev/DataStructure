@@ -2,9 +2,8 @@
 
 int N, M;
 int arr[10];
-bool is_used[10];
 
-void func(int depth)
+void func(int depth, int before)
 {
     if(depth == M)
     {
@@ -16,17 +15,10 @@ void func(int depth)
         return;
     }
 
-    for(int i=1; i<=N; i++)
+    for(int i=before+1; i<=N; i++)
     {
-        if(!is_used[i])
-        {
-            arr[depth] = i;
-            is_used[i] = true;
-
-            func(depth + 1); //여기다가 i를 변수로 넘겨줘서 오름차순으로 되게 만들면...??
- 
-            is_used[i] = false;
-        }
+        arr[depth] = i;
+        func(depth + 1, i); //여기다가 i를 변수로 넘겨줘서 오름차순으로 되게 만들면...??
     }
 }
 
@@ -37,7 +29,7 @@ int main()
 
     std::cin >> N >> M;
 
-    func(0);
+    func(0, 0);
     
     return 0;
 }

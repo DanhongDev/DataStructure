@@ -4,15 +4,15 @@
 
 using namespace std;
 
-vector<int> solution(vector<int> prices) 
+vector<int> solution(vector<int> prices)
 {
     int n = prices.size();
-    vector<int> answer(n); 
+    vector<int> answer(n);
     stack<int> s;
 
-    for(int i=0; i<n; i++) 
+    for(int i=0; i<n; i++)
     {
-        while(!s.empty() && prices[i] < prices[s.top()]) 
+        while(!s.empty() && prices[i] < prices[s.top()])
         {
             answer[s.top()] = i - s.top();
             s.pop();
@@ -20,10 +20,10 @@ vector<int> solution(vector<int> prices)
         s.push(i);
     }
 
-    while(!s.empty()) 
+    while(!s.empty())
     {
         int idx = s.top();
-        answer[idx] = (n-1)-idx; 
+        answer[idx] = (n-1) - idx;
         s.pop();
     }
 

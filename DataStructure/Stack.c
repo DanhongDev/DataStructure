@@ -1,4 +1,4 @@
-#pragma warning(disable : 4996)
+78#pragma warning(disable : 4996)
 #include "Stack.h"
 
 #include <stdio.h>

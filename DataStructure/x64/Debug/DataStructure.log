@@ -1,2 +1,189 @@
 ﻿  Stack.c
-  DataStructure.vcxproj -> C:\Users\space\Desktop\Digipen Project\DataStructure\x64\Debug\DataStructure.exe
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(1,1): error C2059: 구문 오류: '상수'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(1,3): error C2014: 전처리기 명령은 공백 아닌 문자로 시작해야 합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(11,24): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(11,24): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(11,33): error C2059: 구문 오류: '형식'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(11,36): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(13,18): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(13,18): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(13,27): error C2059: 구문 오류: '형식'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(13,28): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(15,17): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(15,17): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(15,25): error C2059: 구문 오류: '형식'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(15,28): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(17,24): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(17,24): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(17,32): error C2059: 구문 오류: '형식'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(17,35): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(19,20): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(19,20): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(19,23): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(21,28): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(21,28): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(21,31): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(23,24): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(23,24): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(23,27): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(25,27): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(25,27): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(25,30): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(27,26): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(27,26): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(27,29): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(29,26): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(29,26): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(29,35): error C2059: 구문 오류: '형식'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(29,36): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(31,26): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(31,26): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(31,29): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(33,24): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(33,24): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.h(33,27): error C2059: 구문 오류: ')'
+  (소스 파일 'Stack.c'을(를) 컴파일하는 중)
+  
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(7,25): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(7,25): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(7,33): error C2059: 구문 오류: '형식'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(7,36): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(20,19): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(20,19): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(20,27): error C2059: 구문 오류: '형식'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(20,28): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(31,18): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(31,18): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(31,26): error C2059: 구문 오류: '형식'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(31,28): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(48,25): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(48,25): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(48,33): error C2059: 구문 오류: '형식'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(48,35): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(62,21): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(62,21): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(62,23): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(63,1): error C2054: 's' 다음에 '('가 필요합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(74,29): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(74,29): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(74,31): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(75,1): error C2054: 's' 다음에 '('가 필요합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(79,25): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(79,25): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(79,27): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(80,1): error C2054: 's' 다음에 '('가 필요합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(84,28): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(84,28): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(84,30): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(85,1): error C2054: 's' 다음에 '('가 필요합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(92,27): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(92,27): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(92,29): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(93,1): error C2054: 's' 다음에 '('가 필요합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(100,27): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(100,27): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(100,35): error C2059: 구문 오류: '형식'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(100,36): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(121,27): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(121,27): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(121,29): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(122,1): error C2054: 's' 다음에 '('가 필요합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(129,25): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(129,25): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(129,27): error C2059: 구문 오류: ')'
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(130,1): error C2054: 's' 다음에 '('가 필요합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(142,14): error C2146: 구문 오류: ';'이(가) 's' 식별자 앞에 없습니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(143,9): warning C4013: 'Initialize'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(152,85): warning C4013: 'Size'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(152,95): warning C4013: 'Capacity'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(162,11): warning C4013: 'Push'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(167,11): warning C4013: 'Pop'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(174,11): warning C4013: 'Peek'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(181,7): warning C4013: 'Print'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(185,5): warning C4013: 'Terminate'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(154,6): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\space\source\repos\DataStructure\DataStructure\Stack.c(161,7): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

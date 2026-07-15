@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/dan/VS Code/PS/Programmers/Problems/k진수에서 소수 개수 구하기"
+relocations:     []
+...

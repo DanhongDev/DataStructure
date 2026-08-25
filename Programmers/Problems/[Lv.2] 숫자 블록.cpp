@@ -35,10 +35,3 @@ vector<int> solution(long long begin, long long end)
     
     return answer;
 }
-
-int main()
-{
-    vector<int> answer =solution(1000000014, 1000000015);
-    
-    return 0;
-}

@@ -63,10 +63,3 @@ int solution(vector<string> user_id, vector<string> banned_id)
 
     return answer.size();
 }
-
-int main()
-{
-    int answer = solution({"frodo", "fradi", "crodo", "abc123", "frodoc"}, {"fr*d*", "*rodo", "******", "******"});
-    
-    return 0;
-}

@@ -22,9 +22,3 @@ int solution(int n, vector<int> money)
     
     return dp[n];
 }
-
-int main()
-{
-    int answer = solution(12, {3, 5, 6});
-    return 0;
-}

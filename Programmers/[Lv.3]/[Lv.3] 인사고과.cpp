@@ -37,10 +37,3 @@ int solution(vector<vector<int>> scores)
     
     return answer;
 }
-
-int main()
-{
-    int answer = solution({{2,2}, {1,4}, {3,2}, {3,2}, {2,1}});
-    
-    return 0;
-}

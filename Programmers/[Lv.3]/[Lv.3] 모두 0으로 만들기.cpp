@@ -117,11 +117,3 @@ long long solution(vector<int> a, vector<vector<int>> edges)
 
     return answer;
 }
-
-int main()
-{
-    long long answer = solution({-5,0,2,1,2}, {{0,1}, {3,4}, {2,3}, {0,3}});
-    long long answer = solution({0,1,0}, {{0,1}, {1,2}});
-    
-    return 0;
-}

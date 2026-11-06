@@ -5,49 +5,41 @@ using namespace std;
 
 int solution(int alp, int cop, vector<vector<int>> problems)
 {
-    int max_al=0, max_co=0;
+    int max_alp=0, max_cop=0;
     for(auto &p : problems)
     {
-        max_al = max(max_al, p[0]);
-        max_co = max(max_co, p[1]);
+        max_alp = max(max_alp, p[0]);
+        max_cop = max(max_cop, p[1]);
     }
+    // 만약 초기에 주어진 alp, cop이 max_alp,cop를 이미 넘었다면?? -> 보정
+    alp = min(alp, max_alp);
+    cop = min(cop, max_cop);
 
-    alp = min(alp, max_al);
-    cop = min(cop, max_co);
-
-    //dp[i][j] = 알고력 i점과 코딩력 j점에 도달하기 위한 최단 시간
-    vector<vector<int>> dp(max_al+1, vector<int>(max_co+1, 1e9));
+    // dp[i][j]: 알고 i점과 코딩 j점에 도달하기 위한 최소 시간
+    vector<vector<int>> dp(max_alp+1, vector<int>(max_cop+1, 1e9));
     dp[alp][cop] = 0;
 
-    for(int i=alp; i<=max_al; i++)
+    for(int i=alp; i<=max_alp; i++)
     {
-        for(int j=cop; j<=max_co; j++)
+        for(int j=cop; j<=max_cop; j++)
         {
-            if(i+1 <= max_al) dp[i+1][j] = min(dp[i+1][j], dp[i][j]+1);
-            if(j+1 <= max_co) dp[i][j+1] = min(dp[i][j+1], dp[i][j]+1);
-
-            // 현재 스탯으로 풀 수 있는 문제 풀기 삽입
+            if(i+1 <= max_alp) dp[i+1][j] = min(dp[i+1][j], dp[i][j]+1); // 알고 공부 1점
+            if(j+1 <= max_cop) dp[i][j+1] = min(dp[i][j+1], dp[i][j]+1); // 코딩 공부 1점
+            // 풀 수 있는 문제들을 풀기
             for(auto &p : problems)
             {
-                int alp_req = p[0], cop_req = p[1], alp_rwd = p[2], cop_rwd = p[3], cost = p[4];
+                int req_alp = p[0], req_cop = p[1], rwd_alp = p[2], rwd_cop = p[3], cost = p[4];
 
-                if(i >= alp_req && j >= cop_req)
+                if(i >= req_alp && j >= req_cop)
                 {
-                    int next_alp = min(max_al, i + alp_rwd);
-                    int next_cop = min(max_co, j + cop_rwd);
-                    
-                    dp[next_alp][next_cop] = min(dp[next_alp][next_cop], dp[i][j] + cost);
+                    int get_alp = min(max_alp, i + rwd_alp);
+                    int get_cop = min(max_cop, j + rwd_cop);
+
+                    dp[get_alp][get_cop] = min(dp[get_alp][get_cop], dp[i][j] + cost);
                 }
             }
         }
     }
-    
-    return dp[max_al][max_co];
-}
 
-int main()
-{
-    int answer = solution(0, 0,	{{0,0,2,1,2},{4,5,3,1,2},{4,11,4,0,2},{10,4,0,4,2}});
-    
-    return 0;
+    return dp[max_alp][max_cop];
 }
